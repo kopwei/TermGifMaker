@@ -10,4 +10,5 @@ RUN apt-get update && apt-get -y install \
      && rm -rf /var/lib/apt/lists/*
 RUN npm install -g terminalizer
 
+ENV NOT_AT_BRIDGE=1
 CMD ["bash"]
